@@ -17,7 +17,6 @@ public class Ventana extends JFrame {
         setLocationRelativeTo(this);
         setResizable(false);        
         add(t);
-        
         addKeyListener(new Teclado());
         new Graficos(t).start();
     }
