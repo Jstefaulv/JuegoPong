@@ -4,12 +4,13 @@ package cl.xdfw.pong.classes;
 import java.applet.AudioClip;
 import java.awt.geom.Rectangle2D;
 import cl.xdfw.pong.resources.Audio;
+
 /**
  *
  * @author Jstefaulv
  */
+
 public class Pelota {
-    //dimensiones de la pelota en pantalla
     private static final int t_x = 15;
     private static final int t_y = 15;
     private static double x = 0;
@@ -28,7 +29,6 @@ public class Pelota {
     AudioClip foul = audio.getAudio("/cl/xdfw/pong/sounds/Out.wav");
     AudioClip cont = audio.getAudio("/cl/xdfw/pong/sounds/Out.wav");
     
-    //dibujar rectangulo y mostrar la pelota en los ejes XY
     public Rectangle2D getShape(){
         return new Rectangle2D.Double(x,y,t_x,t_y);
     }

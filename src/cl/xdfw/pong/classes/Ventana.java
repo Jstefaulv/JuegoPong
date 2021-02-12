@@ -15,7 +15,7 @@ public class Ventana extends JFrame {
         setTitle("Pong - Java");
         setSize(800,500);
         setLocationRelativeTo(this);
-        setResizable(false);
+        setResizable(false);        
         add(t);
         
         addKeyListener(new Teclado());
